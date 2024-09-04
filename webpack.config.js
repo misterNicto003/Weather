@@ -27,6 +27,17 @@ module.exports = {
     ],
   },
 
+  devServer: {
+    proxy:[
+      {
+        context: ['/api'], // URL контекст
+        target: 'http://api.weatherapi.com', // Целевой сервер
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' }, // Изменение пути запроса
+      },
+    ],
+  },
+
   mode: "development",
   plugins: [
     new HtmlWebpackPlugin({

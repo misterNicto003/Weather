@@ -133,7 +133,7 @@ body {
 }
 .card-value {
   display: flex;
-  font-size: 92px;
+  font-size: 62px;
   line-height: 1;
   color: #000000;
 }
@@ -142,6 +142,7 @@ body {
   font-size: 50%;
 }
 .card-img {
+  width: 160px;
 }
 .card-description {
   font-size: 20px;
